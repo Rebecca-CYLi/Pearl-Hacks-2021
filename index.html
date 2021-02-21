@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<link href="style.css" type="text/css" rel="stylesheet">
+<meta charset="utf-8" />
+<meta="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<script src="popup.js" type="text/javascript"></script>
+
+<head>
+    <title>Write by my Side</title>
+    <link rel="icon" href="https://img.icons8.com/nolan/64/geometric-flowers.png">
+</head>
+
+<body>
+    <a href="" class="site-banner">
+        <img src="https://img.icons8.com/nolan/64/geometric-flowers.png" />
+        <h1>Write by my Side</h1>
+    </a>
+    <h2 class="site-banner"><a>About</a></h2>
+
+    <div class="welcome-banner">
+        <h1 class="title">Welcome to Write by my Side!</h1>
+        <p class="description">Which would you like today?</p>
+    </div>
+
+    <div class="grid card">
+        <a class="popup_trigger" id="myBtn">
+            <button class="Rbutton">Receive</button>
+        </a>
+
+        <p>Or</p>
+
+        <a class="popup_trigger" id="myMsg">
+            <button class="Sbutton" onclick="sendaMsg()">
+              Send a Message
+            </button>
+        </a>
+    </div>
+    <!------------------------------------------------------------------------------->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Everything is going to be okay today</p>
+        </div>
+    </div>
+
+    <!-- <div id="msgWindow" class="msg_Modal">
+        <div class="msgModal-content">
+            <span class="msg_close">&times;</span>
+            <p>Send a message</p>
+        </div>
+    </div> -->
+    <!------------------------------------------------------------------------------->
+    <div class="dashboard" id="floatRight">
+        <h3>Dashboard</h3>
+        <ul id="dashboard">
+            <li><a href="">Received</a></li>
+            <li><a href="">Sent</a></li>
+            <hr>
+            <li><a href="">Settings</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Team</a></li>
+        </ul>
+    </div>
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        function sendaMsg() {
+            var newMsg = prompt("Enter a message", "Input...");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

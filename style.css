@@ -1,0 +1,271 @@
+.site-banner {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 5px 0;
+    border-radius: 10px;
+    opacity: 0.75;
+    padding-left: 10px;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+.floatRight {
+    padding-left: 100px;
+}
+
+.hr-break {
+    width: 10;
+}
+
+h2 {
+    float: right;
+    position: fixed;
+    z-index: 1;
+    top: 5px;
+    right: 25px;
+}
+
+.Rbutton {
+    /* padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px; */
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.Sbutton {
+    /* padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px; */
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.welcome-banner {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.title a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+    text-decoration: underline;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+}
+
+.title,
+.description {
+    text-align: center;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.card {
+    /* margin: 1rem; */
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    width: 150px;
+    margin: auto;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+}
+
+.dashboard {
+    opacity: 0.75;
+    width: 175px;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    right: 25px;
+    background: #eee;
+    overflow-x: scroll;
+    padding: 8px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 1rem;
+    flex-basis: -50%;
+    padding: 1.5rem;
+    margin-left: 10%;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+#dashboard {
+    text-align: left;
+    list-style-type: none;
+    margin: 5px;
+    padding: 15px;
+    line-height: 3.5;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196f3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
